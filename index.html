@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Déclaration de l'encodage des caractères en UTF-8 pour supporter tous les caractères spéciaux -->
+    <meta charset="UTF-8">
+    
+    <!-- Permet de rendre le site responsive en ajustant la taille de la page en fonction de la largeur de l'appareil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titre de la page qui apparaîtra dans l'onglet du navigateur -->
+    <title>Projet carrousel avec une poupée gigogne</title>
+    
+    <!-- Lien vers la feuille de style CSS qui définit l'apparence du carrousel et des poupées gigognes -->
+    <link rel="stylesheet" href="style-carrousel.css">
+</head>
+
+<body>
+    <!-- Section qui présente le projet avec un titre -->
+    <section class="presentation">
+        <h2>Projet en application</h2>
+        
+        <!-- Conteneur principal du carrousel et des poupées gigognes -->
+        <div class="carrousel">
+
+            <!-- Conteneur de toutes les diapositives du carrousel -->
+            <div class="carrousel__contenu">
+                
+                <!-- Chaque diapositive est un article distinct -->
+                <article class="carrousel__diapositive">
+                    <!-- Image affichée dans la diapositive -->
+                    <img class="carrousel__diapositive--espace-reserve" src="https://placehold.co/800x400" alt="Diapositive 1">
+                    <!-- Texte descriptif associé à l'image -->
+                    <div class="carrousel__diapositive--texte">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, odio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui obcaecati earum neque amet ipsum quis praesentium veritatis...</p>
+                    </div>
+                </article>
+
+                <!-- Deuxième diapositive -->
+                <article class="carrousel__diapositive">
+                    <!-- NB : petite erreur dans le nom de classe 'espace-reserver' au lieu de 'espace-reserve' -->
+                    <img class="carrousel__diapositive--espace-reserver" src="https://placehold.co/800x400" alt="Diapositive 2">
+                    <div class="carrousel__diapositive--texte">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </article>
+
+                <!-- Troisième diapositive -->
+                <article class="carrousel__diapositive">
+                    <img class="carrousel__diapositive--espace-reserve" src="https://placehold.co/800x400" alt="Diapositive 3">
+                    <div class="carrousel__diapositive--texte">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </article>
+
+                <!-- Quatrième diapositive -->
+                <article class="carrousel__diapositive">
+                    <img class="carrousel__diapositive--espace-reserve" src="https://placehold.co/800x400" alt="Diapositive 4">
+                    <div class="carrousel__diapositive--texte">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </article>
+
+                <!-- Cinquième diapositive -->
+                <article class="carrousel__diapositive">
+                    <img class="carrousel__diapositive--espace-reserve" src="https://placehold.co/800x400" alt="Diapositive 5">
+                    <div class="carrousel__diapositive--texte">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Bouton de navigation vers la diapositive précédente -->
+            <button class="carrousel__bouton carrousel__bouton--haut">&#9650;</button>
+            
+            <!-- Bouton de navigation vers la diapositive suivante -->
+            <button class="carrousel__bouton carrousel__bouton--bas">&#9660;</button>
+
+            <!-- Conteneur pour les poupées gigognes, placées de façon visuelle sous forme empilée -->
+            <div class="poupee_gigogne">
+                <!-- Poupée gigogne 1, composée de deux images : haut et bas -->
+                <article class="poupee_gigogne__1">
+                    <img class="poupee_gigogne--haut" src="https://placehold.co/200x200/orange/white" alt="morceau de poupée haut de la poupée 1">
+                    <img class="poupee_gigogne--bas" src="https://placehold.co/200x200/orange/white" alt="morceau de poupée bas de la poupée 1">
+                </article>
+
+                <!-- Poupée gigogne 2 -->
+                <article class="poupee_gigogne__2">
+                    <img class="poupee_gigogne--haut" src="https://placehold.co/190x190/orange/white" alt="morceau de poupée haut de la poupée 2">
+                    <img class="poupee_gigogne--bas" src="https://placehold.co/190x190/orange/white" alt="morceau de poupée bas de la poupée 2">
+                </article>
+
+                <!-- Poupée gigogne 3 -->
+                <article class="poupee_gigogne__3">
+                    <img class="poupee_gigogne--haut" src="https://placehold.co/180x180/orange/white" alt="morceau de poupée haut de la poupée 3">
+                    <img class="poupee_gigogne--bas" src="https://placehold.co/180x180/orange/white" alt="morceau de poupée bas de la poupée 3">
+                </article>
+
+                <!-- Poupée gigogne 4 -->
+                <article class="poupee_gigogne__4">
+                    <img class="poupee_gigogne--haut" src="https://placehold.co/170x170/orange/white" alt="morceau de poupée haut de la poupée 4">
+                    <img class="poupee_gigogne--bas" src="https://placehold.co/170x170/orange/white" alt="morceau de poupée bas de la poupée 4">
+                </article>
+
+                <!-- Poupée gigogne 5 -->
+                <article class="poupee_gigogne__5">
+                    <img class="poupee_gigogne--haut" src="https://placehold.co/160x160/orange/white" alt="morceau de poupée haut de la poupée 5">
+                    <img class="poupee_gigogne--bas" src="https://placehold.co/160x160/orange/white" alt="morceau de poupée bas de la poupée 5">
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inclusion du script JavaScript pour rendre le carrousel interactif (changement de diapo, animation des poupées, etc.) -->
+    <script src="script-carrousel.js"></script>
+</body>
+
+</html>
